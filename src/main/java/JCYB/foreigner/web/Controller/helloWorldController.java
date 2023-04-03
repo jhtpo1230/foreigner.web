@@ -12,5 +12,6 @@ public class helloWorldController {
         model.addAttribute("name", "Mustache");
         return "index";
         //test commit
+        //2th commit
     }
 }
