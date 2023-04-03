@@ -8,10 +8,10 @@ import org.springframework.web.bind.annotation.GetMapping;
 public class helloWorldController {
 
     @GetMapping("/")
-    public String helloWorld(Model model) {
+    public String helloWorld(Model model) { //3rd commit
         model.addAttribute("name", "Mustache");
         return "index";
         //test commit
-        //2th commit
+
     }
 }
