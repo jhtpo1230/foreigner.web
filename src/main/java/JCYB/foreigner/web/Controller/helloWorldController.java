@@ -11,6 +11,6 @@ public class helloWorldController {
     public String helloWorld(Model model) {
         model.addAttribute("name", "Mustache");
         return "index";
-        //1차 커밋
+        //test commit
     }
 }
