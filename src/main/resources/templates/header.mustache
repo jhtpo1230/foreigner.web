@@ -2,8 +2,7 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="/assets/font/bootstrap-icons.css"><link rel="stylesheet" href="/assets/css/docs.css">
-    <title>main</title>
+    <link href="styles/style.css" rel="stylesheet" type="text/css">
     <style>
         div {
             text-align: center;
@@ -24,8 +23,10 @@
         <option>문화원</option>
         <option>기타</option>
     </select>
-    <input type="text" id="serch" placeholder="구를 검색하세요" />
-    <input type="submit" value="검색">
+    <form method="post" action="/api">
+        <input type="text" name="ADDR" value={{ADDR}} placeholder="구를 검색하세요" />
+        <input type="submit" value="검색">
+    </form>
 </div>
 </body>
 </html>
