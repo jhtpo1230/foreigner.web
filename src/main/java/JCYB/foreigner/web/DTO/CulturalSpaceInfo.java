@@ -5,7 +5,7 @@ import lombok.Data;
 
 @Entity
 @Data
-public class culturalSpaceInfo {
+public class CulturalSpaceInfo {
     @Id //PK
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
@@ -34,8 +34,8 @@ public class culturalSpaceInfo {
     private String BLUE; //BLUE
     private String RED; //RED
     private String AIRPORT; //공항버스
-    protected culturalSpaceInfo(){}
-    public culturalSpaceInfo(Long id, int num, String SUBJCODE, String FAC_NAME, String ADDR, double x_COORD, double y_COORD, String PHNE, String FAX, String HOMEPAGE, String OPENHOUR, String ENTR_FEE, String CLOSEDAY, String OPEN_DAY, String SEAT_CNT, String MAIN_IMG, String ETC_DESC, String FAC_DESC, String ENTRFREE, String SUBWAY, String BUSSTOP, String YELLOW, String GREEN, String BLUE, String RED, String AIRPORT) {
+    protected CulturalSpaceInfo(){}
+    public CulturalSpaceInfo(Long id, int num, String SUBJCODE, String FAC_NAME, String ADDR, double x_COORD, double y_COORD, String PHNE, String FAX, String HOMEPAGE, String OPENHOUR, String ENTR_FEE, String CLOSEDAY, String OPEN_DAY, String SEAT_CNT, String MAIN_IMG, String ETC_DESC, String FAC_DESC, String ENTRFREE, String SUBWAY, String BUSSTOP, String YELLOW, String GREEN, String BLUE, String RED, String AIRPORT) {
         this.id = id;
         this.num = num;
         this.SUBJCODE = SUBJCODE;
@@ -63,4 +63,5 @@ public class culturalSpaceInfo {
         this.RED = RED;
         this.AIRPORT = AIRPORT;
     }
+
 }
