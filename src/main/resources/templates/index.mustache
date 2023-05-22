@@ -2,14 +2,30 @@
 <html>
 <head>
     <title>My Mustache Page</title>
-    <meta charset="utf-8">
+    <meta charset="UTF-8">
+    <link href="styles/style.css" rel="stylesheet" type="text/css">
+    <style>
+        div {
+            text-align: center;
+        }
+        p { font-size:200%; }
+    </style>
 </head>
 <body>
-  <!--{{!> header}}
-  <h1>Hello, {{!name}}!</h1> -->
-  <h1>API Test</h1>
+  <h1>"For"eigner</h1>
   <form action="/api" method="post">
-      <input type="submit" value="Submit">
+      <select>
+          <option>All</option>
+          <option>Concert hall</option>
+          <option>Library</option>
+          <option>Art museum</option>
+          <option>Culture and Arts Center</option>
+          <option>Museum/Memorial hall</option>
+          <option>Cultural center</option>
+          <option>Etc</option>
+      </select>
+      <input type="text" placeholder="Search for an Area." name="ADDR">
+      <input type="submit" value="Search" >
   </form>
 </body>
 </html>

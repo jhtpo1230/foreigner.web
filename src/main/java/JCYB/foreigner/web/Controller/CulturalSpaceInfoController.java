@@ -42,8 +42,6 @@ public class CulturalSpaceInfoController {
             JSONObject culturalSpaceInfo = (JSONObject) jsonObject.get("culturalSpaceInfo");
             JSONArray infoArr = (JSONArray) culturalSpaceInfo.get("row");
 
-            System.out.println("infoArr size: " + infoArr.size());
-
             for (int i = 0; i < infoArr.size(); i++) {
                 JSONObject tmp = (JSONObject) infoArr.get(i);
 
